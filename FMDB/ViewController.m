@@ -12,9 +12,9 @@
 #import "UserCell.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
 - (IBAction)addUsers;
 - (IBAction)update;
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong)NSArray *users;
 
@@ -81,6 +81,7 @@
 }
 
 #pragma mark - tableView数据源方法
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.users.count;

@@ -109,6 +109,7 @@ static FMDatabaseQueue * _queue;
     //3.返回数据
     return usersArray;
 }
+
 //创建一个新的t_newUsers表
 + (void)addKeyWithUid:(NSString *)uid avatar:(NSString *)avatar nickname:(NSString *)nickname dateline:(NSString *)dateline
 {
